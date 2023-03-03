@@ -9,8 +9,110 @@
     </head>
     <body>
         <header id="header">
-            <img id="header-img" src="" alt="logo">
+            <nav id="nav-bar">
+                    <img id="header-img" 
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" 
+                    alt="logo">
+                <ul class="nav">
+                    <li class="navitem"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="navitem"><a href="#video" class="nav-link">How It Works</a></li>
+                    <li class="navitem"><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+            </nav>
         </header>
 
+        <main>
+
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <input type="email" name="email" id="email" placeholder="Enter your address e-mail">
+                <input type="submit" value="GET STARTED">
+            </form>
+             
+            <section id="features">
+                <div class="h-card">
+                    <div class="hcard-icone">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <div class="hcard-text">
+                        <h2 class="hcard-title">Premium Materials</h2>
+                        <p class="hcard-details">Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="h-card">
+                    <div class="hcard-icone">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <div class="hcard-text">
+                        <h2 class="hcard-title">Fast Shipping</h2>
+                        <p class="hcard-details">We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="h-card">
+                    <div class="hcard-icone">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                    <div class="hcard-text">
+                        <h2 class="hcard-title">Quality Assurance</h2>
+                        <p class="hcard-details">For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <iframe id="video" width="1200" height="675" src="https://www.youtube.com/embed/GhANrfyBrYA" title="FreeCodeCamp Learn Accessibility by Building a Quiz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           
+            <section id="pricing">
+                <div class="v-card">
+                    <div class="vcard-head">
+                        <p class="vcard-title">TENOR TROMBONE</p>
+                    </div>
+                    <div class="vcard-body">
+                        <p>$600</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="v-card">
+                    <div class="vcard-head">
+                        <p class="vcard-title">BASS TROMBONE</p>
+                    </div>
+                    <div class="vcard-body">
+                        <p>$900</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+                <div class="v-card">
+                    <div class="vcard-head">
+                        <p class="vcard-title">VALVE TROMBONE</p>
+                    </div>
+                    <div class="vcard-body">
+                        <p>$1200</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum.</p>
+                        <p>Lorem ipsum dolor.</p>
+                        <p>Lorem ipsum.</p>
+                        <button class="btn">SELECT</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <footer>
+            <nav class="footernav">
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <p>Copyright 2016, Original Trombones</p>
+        </footer>
     </body>
 </html>
