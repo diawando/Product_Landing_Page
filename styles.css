@@ -1,24 +1,21 @@
-html{
-    margin:0;
-    padding:0;
-  
-}
+
 *, *::after, *::before{
-    margin: inherit;
-    padding:inherit;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     color: black;
+    background-color: #EEEEEE;
+    
 
 }
 #header{
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-between;
 }
 
 #header > #header-img{
@@ -29,6 +26,7 @@ body{
 #header #nav-bar{
     width: 600px;
     height: 80px;
+    margin-left: 450px;
 }
 #header #nav-bar >.nav{
      height: 40px;
@@ -42,16 +40,16 @@ body{
 #header #nav-bar .nav > .navitem{
     display: inline-block;
     list-style: none;
-    margin-left: 30px;
+    margin-left: 100px;
     margin-top: 0;
 }
 
 #nav-bar .nav .navitem .nav-link{
     text-decoration: none;
     color: inherit;
-    font-size: 18px;
+    font-size: 16px;
 }
-main{
+main, footer{
     width: 75vw;
     margin: auto;
 }
@@ -72,6 +70,7 @@ main #form{
     width: 300px;
     height: 30px;
     padding: 10px;
+    margin: auto;
 }
 #form input[type="submit"]{
      width: 150px;
@@ -79,9 +78,124 @@ main #form{
      background-color: #F1C40E;
      border: none;
      transition: background-color 2s;
+     margin: auto;
+     font-weight: bold;
+     font-size: 17px;
 }
 
 #form input[type="submit"]:hover{
     background-color: #f1780e;
 }
 
+section#features{
+    width: 100%;
+    margin: 80px 0;
+}
+
+#features .h-card{
+    display: flex;
+    margin-top: 10px;  
+    width: 100%;
+    height: 100px;
+}
+
+#features .h-card .hcard-icone, #features .h-card .hcard-text{
+    height: 80px;
+    padding: 10px 0 10px 25px;
+} 
+#features .h-card .hcard-icone{
+    width: 20%;
+    
+}
+
+#features .h-card .hcard-icone > i{
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 40px;
+    color: #FF8C00;
+}
+#features .h-card .hcard-text{
+    width: 80%;
+    padding-left: 5px!important;
+}
+#features .h-card .hcard-text .hcard-title, #features .h-card .hcard-text .hcard-details{
+    margin: 0;
+}
+
+#video{
+    display: block;
+    margin: auto;
+    
+}
+#pricing{
+    padding-top: 20px;
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#pricing .v-card{
+    width: 300px;
+    border: 1px solid #000000;
+    height: 350px;
+    border-radius: 3px;
+    padding: 0;
+
+}
+
+#pricing .v-card .vcard-head{
+     background-color: #DDDDDD;
+     width: 100%;
+     height: 40px; 
+}
+#pricing .v-card .vcard-head p.vcard-title{
+     text-align: center;
+     padding: 15px 0;
+     margin: 0;
+     font-weight: bold;
+}
+
+#pricing .v-card .vcard-body p{
+    text-align: center;
+    margin: 10px 0;
+}
+#pricing .v-card .vcard-body p:first-of-type{
+    font-weight: bold;
+    margin: 30px;
+    font-size: 25px;
+}
+
+#pricing .v-card .vcard-body .btn{
+    display: block;
+    margin: 50px auto 0 auto;
+    height: 40px;
+    width: 120px;
+    background-color: #F1C40E ;
+    border: none;
+}
+footer{
+    background-color: #DDDDDD;
+    padding: 30px;
+    position: relative;
+}
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a{
+    text-decoration: none;
+    
+    color: inherit;
+}
+footer .footernav{
+     position: absolute;
+     right: 30px;
+     top: 10px;
+}
+footer p{
+    margin-top: 8px;
+   text-align: right;
+   font-size: 15px;
+   font-family: sans-serif;
+}
